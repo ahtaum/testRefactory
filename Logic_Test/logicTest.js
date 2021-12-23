@@ -13,17 +13,24 @@ const Palindrome = (data) => {
 
 // Leap Year
 const leapYear = (x, y) => {
-    if (x % 2 === 0 && y % 2 === 0) {
-        
-        for (x; x <= y; x++) {
+    for (x; x <= y; x += 4) {
+        if (x % 2 === 0) {
             console.log(x)
         }
+    }
+}
 
-    } else {
-        console.log(`Ganjil`)
+// Reverse Words
+const reverseWords = (data) => {
+    let wadah = data.split(" ")
+    for (let i in wadah) {
+        console.log(wadah[i].substr(1) + wadah[i].charAt(0))
     }
 }
 
 // Main Input
-Palindrome(`Balonku ada lima`)
-leapYear(1900, 2020)
+// Palindrome(`Balonku ada lima`)
+
+// leapYear(1900, 2020)
+
+reverseWords("I am A Great human")
