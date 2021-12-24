@@ -20,12 +20,14 @@ const leapYear = (x, y) => {
     }
 }
 
-// Reverse Words
+// Reverse Words BELUM JADI
 const reverseWords = (data) => {
-    let wadah = data.split(" ")
+    let wadah = data.split(' ')
+    let hasil = []
     for (let i in wadah) {
-        console.log(wadah[i].substr(1) + wadah[i].charAt(0))
+        hasil[i] = wadah[i].split("").reverse().join("")
     }
+    console.log(hasil.join(" "))
 }
 
 // Main Input
