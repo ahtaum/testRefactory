@@ -20,7 +20,7 @@ const leapYear = (x, y) => {
     }
 }
 
-// Reverse Words BELUM JADI
+// Reverse Words
 const reverseWords = (data) => {
     let wadah = data.split(' ')
     let hasil = []
