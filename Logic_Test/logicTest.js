@@ -30,9 +30,53 @@ const reverseWords = (data) => {
     console.log(hasil.join(" "))
 }
 
+// Nearest Fibonacci BELUM JADI
+// const nearestFibonacci = ([...data]) => {
+//     console.log(data.reduce((a, b) => a + b, 0) + 2)
+// }
+// const nearestFibonacci = ([...data]) => {
+//     let first = 0, second = 1
+//     let third = first + second
+
+//     while(third <= data.length) {
+//         first = second
+//         second = third
+//         third = first + second
+//     }
+
+//     let ans = (Math.abs(third - data.length) >= Math.abs(second - data.length) ? second : third)
+//     return ans
+// }
+
+// FizzBuzz
+const fizzBuzz = (data) => {
+    let sum = []
+    for (let i = 1; i <= data; i++) {
+        sum.push(i)
+    }
+    for (let x in sum) {
+        if (sum[x] % 5 === 0 && sum[x] % 3 === 0) {
+            console.log("FizzBuzz")
+            continue
+        } else if (sum[x] % 5 === 0) {
+            console.log("Buzz")
+            continue
+        } else if (sum[x] % 3 === 0) {
+            console.log("Fizz")
+            continue
+        }
+        console.log(String(sum[x]))
+    }
+}
+
+
 // Main Input
 // Palindrome(`Balonku ada lima`)
 
 // leapYear(1900, 2020)
 
-reverseWords("I am A Great human")
+// reverseWords("I am A Great human")
+
+// console.log(nearestFibonacci([15,1,3])) // BELUM JADI
+
+fizzBuzz(15)
